@@ -1,0 +1,56 @@
+add liquidity 
+
+uniswapRouter ====>>  0x7a250d5630b4cf539739df2c5dacb4c659f2488d
+uniswapPair ====>>  0x4f58b3a4c69f1ee8a9bf11cb5defadc89751c32a
+msgSender ====>>  0x7a250d5630b4cf539739df2c5dacb4c659f2488d
+sender ====>>  0xbde658ba6aaf6c9f7938820b69d47f099bc5ea23
+recipient ====>>  0x4f58b3a4c69f1ee8a9bf11cb5defadc89751c32a
+
+for adding liquidity 
+1. router is the msgSender 
+2. tx sender is the owner of the tokens
+2. Pair is the recipient
+
+Token Sell 
+
+uniswapRouter ====>>  0x7a250d5630b4cf539739df2c5dacb4c659f2488d
+uniswapPair ====>>  0x4f58b3a4c69f1ee8a9bf11cb5defadc89751c32a
+msgSender ====>>    0x7a250d5630b4cf539739df2c5dacb4c659f2488d
+sender ====>>       0xbde658ba6aaf6c9f7938820b69d47f099bc5ea23
+recipient ====>>    0x4f58b3a4c69f1ee8a9bf11cb5defadc89751c32a
+
+For Token Sell 
+
+1. router is msgSender
+2. sender is asset owner 
+3. recipient is uniswap pair
+
+
+
+Buy Tokens 
+
+uniswapRouter ====>>  0x7a250d5630b4cf539739df2c5dacb4c659f2488d
+uniswapPair ====>>  0x4f58b3a4c69f1ee8a9bf11cb5defadc89751c32a
+msgSender ====>>  0x4f58b3a4c69f1ee8a9bf11cb5defadc89751c32a
+sender ====>>  0x4f58b3a4c69f1ee8a9bf11cb5defadc89751c32a
+recipient ====>>  0xbde658ba6aaf6c9f7938820b69d47f099bc5ea23
+
+For Token Buy
+1. pair is msgSender 
+2. transfer sender is the pair 
+3. recipient is the actual owner of final tokens 
+
+
+remove liquidity 
+
+uniswapRouter ====>>  0x7a250d5630b4cf539739df2c5dacb4c659f2488d
+uniswapPair ====>>  0x4f58b3a4c69f1ee8a9bf11cb5defadc89751c32a
+msgSender ====>>  0x7a250d5630b4cf539739df2c5dacb4c659f2488d
+sender ====>>  0x7a250d5630b4cf539739df2c5dacb4c659f2488d
+recipient ====>>  0xbde658ba6aaf6c9f7938820b69d47f099bc5ea23
+
+For Remove liquidity 
+
+1. router is msgSender
+2. sender is router 
+3. recipient asset owner
